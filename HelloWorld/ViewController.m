@@ -31,5 +31,9 @@
         UIAlertView * nameAlert = [[UIAlertView alloc] initWithTitle:@"" message:[NSString stringWithFormat:@"Welcome %@",_nameTextField.text] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
         [nameAlert show];
     }
+    else{
+        UIAlertView * nameAlert = [[UIAlertView alloc] initWithTitle:@"" message:@"No text found" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        [nameAlert show];
+    }
 }
 @end
