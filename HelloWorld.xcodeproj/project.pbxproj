@@ -40,6 +40,7 @@
 		F21575131B088BD200C99217 /* HelloWorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F21575181B088BD200C99217 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F21575191B088BD200C99217 /* HelloWorldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldTests.m; sourceTree = "<group>"; };
+		F2762F111B08DDDD0014965D /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +90,7 @@
 				F215750A1B088BD200C99217 /* Images.xcassets */,
 				F215750C1B088BD200C99217 /* LaunchScreen.xib */,
 				F21574FD1B088BD200C99217 /* Supporting Files */,
+				F2762F111B08DDDD0014965D /* Constant.h */,
 			);
 			path = HelloWorld;
 			sourceTree = "<group>";
@@ -414,6 +416,7 @@
 				F215751F1B088BD200C99217 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F21575201B088BD200C99217 /* Build configuration list for PBXNativeTarget "HelloWorldTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +425,7 @@
 				F21575221B088BD200C99217 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
