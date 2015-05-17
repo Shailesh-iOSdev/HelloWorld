@@ -25,6 +25,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+//This function is used to add text to UIAlertview
 - (IBAction)showAlertButton_clicked:(UIButton *)sender {
     
     if (_nameTextField.text.length>0) {
