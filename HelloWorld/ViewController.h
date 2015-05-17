@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIButton *showAlertButton;
+- (IBAction)showAlertButton_clicked:(UIButton *)sender;
 
 @end
 

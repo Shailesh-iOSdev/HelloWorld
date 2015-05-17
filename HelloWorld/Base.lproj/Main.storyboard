@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,8 +16,44 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TOI-fF-VRY">
+                                <rect key="frame" x="26" y="66" width="548" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Qan-6j-sdz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sl-94-UBL">
+                                <rect key="frame" x="285" y="155" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="EgQ-3R-Rqk"/>
+                                    <constraint firstAttribute="height" constant="30" id="Fyl-CV-JaQ"/>
+                                </constraints>
+                                <state key="normal" title="OK">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAlertButton_clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g1i-ti-aFF"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TOI-fF-VRY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="46" id="BdC-ky-1MI"/>
+                            <constraint firstItem="6sl-94-UBL" firstAttribute="top" secondItem="TOI-fF-VRY" secondAttribute="bottom" constant="59" id="L18-ud-6Ge"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TOI-fF-VRY" secondAttribute="trailing" constant="10" id="gUC-Cx-doo"/>
+                            <constraint firstItem="6sl-94-UBL" firstAttribute="top" secondItem="TOI-fF-VRY" secondAttribute="bottom" constant="59" id="i8H-I1-qSD"/>
+                            <constraint firstItem="TOI-fF-VRY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="oMe-Cp-1sL"/>
+                            <constraint firstAttribute="centerX" secondItem="TOI-fF-VRY" secondAttribute="centerX" id="vVG-Ot-6fS"/>
+                            <constraint firstAttribute="centerX" secondItem="6sl-94-UBL" secondAttribute="centerX" id="zIs-lk-2jd"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="TOI-fF-VRY" id="kcO-sT-tyO"/>
+                        <outlet property="showAlertButton" destination="6sl-94-UBL" id="nco-oD-Mbz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
