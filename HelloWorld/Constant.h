@@ -9,5 +9,5 @@
 #ifndef HelloWorld_Constant_h
 #define HelloWorld_Constant_h
 
-
+# define FileName @"File"
 #endif
